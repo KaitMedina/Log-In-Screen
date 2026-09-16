@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="Icon" href="images/favicon.webp" type="image/x-icon">
+        <style type="text/css">
+            body {
+                background-image: url("images/Background.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            .login{
+                background-color: white;
+                width: 300px;
+                padding: 15px;
+                border-radius: 20px;
+                clip-path: polygon(50%,22%,10%,50%,50%,10%,0%,50%);
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <body>
+                <div class="login">
+                    <form action="blank.html" method="POST">
+                        <h1>Login</h1>
+                        <p>Please create your username and password!</p>
+                        <p>
+                            <label for="username">Username: </label>
+                            <input type="text" id="username" name="username" placeholder="Enter username" required>
+                        </p>
+                        <p>
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" name="password" placeholder="Enter password" required>
+                        </p>
+                        <p>
+                            <button>Submit</button>
+                        </p>
+                    </form>    
+                </div>
+            </body>
+        </main>
+    </body>
+</html>
