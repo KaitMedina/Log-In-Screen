@@ -7,17 +7,18 @@
         <link rel="Icon" href="images/favicon.webp" type="image/x-icon">
         <style type="text/css">
             body {
-                background-image: url("images/Background.jpg");
-                background-size: cover;
+                background-image: radial-gradient(circle at center, transparent 40%, black 67%), url("images/Background.jpg");
+                background-size: contain;
+                background-position: center top;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
+                background-color: black;
             }
             .login{
                 background-color: white;
                 width: 300px;
                 padding: 15px;
                 border-radius: 20px;
-                clip-path: polygon(50%,22%,10%,50%,50%,10%,0%,50%);
             }
             h1{
                 text-align: center;
