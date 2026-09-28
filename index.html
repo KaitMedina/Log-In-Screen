@@ -17,16 +17,42 @@
             background-color: black;
         }
 
+        .logo-icon{
+            display: flex;
+            justify-content: center;
+        }
+
         .login {
             background-color: rgba(255, 255, 255, 0.4);
-            width: 300px;
-            padding: 15px;
+            width: fit-content;
+            padding: 20px;
             border-radius: 20px;
         }
 
         h1 {
             text-align: center;
+            color: #F49BBF;
         }
+
+        p {
+            color: #FFC5D3
+        }
+
+        .email {
+            display:flex;
+            justify-content: center;
+        }
+
+        .password {
+            display:flex;
+            justify-content: center;
+        }
+
+        .submit {
+            display:flex;
+            justify-content: center;
+        }
+
     </style>
 </head>
 
@@ -34,17 +60,21 @@
     <main>
         <div class="login">
             <form action="blank.html" method="POST">
-                <h1>Login</h1>
-                <p>Please create your username and password!</p>
-                <div>
-                    <label for="username">Username: </label>
-                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                <div class="logo-icon">
+                    <img src="images/cat-shop-logo.png" alt="Cat Shop Logo" style="height: 100px;">
                 </div>
-                <div>
-                    <label for="password">Password: </label>
-                    <input type="password" id="password" name="password" placeholder="Enter password" required>
-                </div>
-                <div>
+                <h1>
+                    Login</h1>
+                <p>Please enter your email and password!</p>
+                <div class="email">
+                    <!--label for="username">Username: </label-->
+                    <input type="text" id="email" name="email" placeholder="Email" required>
+                </div><br>
+                <div class="password">
+                    <!--label for="password">Password: </label-->
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div><br>
+                <div class="submit">
                     <button>Submit</button>
                 </div>
             </form>
