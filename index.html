@@ -7,53 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="Icon" href="images/favicon.webp" type="image/x-icon">
-    <style type="text/css">
-        body {
-            background-image: radial-gradient(circle at center, transparent 40%, black 67%), url("images/Background.jpg");
-            background-size: contain;
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-color: black;
-        }
-
-        .logo-icon{
-            display: flex;
-            justify-content: center;
-        }
-
-        .login {
-            background-color: rgba(255, 255, 255, 0.4);
-            width: fit-content;
-            padding: 20px;
-            border-radius: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #F49BBF;
-        }
-
-        p {
-            color: #FFC5D3
-        }
-
-        .email {
-            display:flex;
-            justify-content: center;
-        }
-
-        .password {
-            display:flex;
-            justify-content: center;
-        }
-
-        .submit {
-            display:flex;
-            justify-content: center;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css" fetchpriority="high">
 </head>
 
 <body>
@@ -63,19 +17,16 @@
                 <div class="logo-icon">
                     <img src="images/cat-shop-logo.png" alt="Cat Shop Logo" style="height: 100px;">
                 </div>
-                <h1>
-                    Login</h1>
+                <h1>Login</h1>
                 <p>Please enter your email and password!</p>
                 <div class="email">
-                    <!--label for="username">Username: </label-->
-                    <input type="text" id="email" name="email" placeholder="Email" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                 </div><br>
                 <div class="password">
-                    <!--label for="password">Password: </label-->
                     <input type="password" id="password" name="password" placeholder="Password" required>
                 </div><br>
-                <div class="submit">
-                    <button>Submit</button>
+                <div class="login-button">
+                    <button>Sign in</button>
                 </div>
             </form>
         </div>
