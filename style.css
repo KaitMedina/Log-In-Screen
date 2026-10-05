@@ -1,7 +1,7 @@
 body {
   background-image:
     radial-gradient(circle at center, transparent 40%, black 67%),
-    url("images/Background.jpg");
+    url("assets/Background.jpg");
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
